@@ -1,7 +1,7 @@
 # Reconstruction Challenge
 -------------------------
 
-This repo contains a barebones implementation of our privacy preserving simulator from our paper on [inherently privacy-preseving vision](https://www.sciencedirect.com/science/article/pii/S2666659624000052?via%3Dihub). We have run it on a video of a scene that contains a message that appears a few times. Your goal is to crack the code and find the message!
+This repo contains a barebones implementation of our privacy-preserving simulator from our paper on [inherently privacy-preseving vision](https://www.sciencedirect.com/science/article/pii/S2666659624000052?via%3Dihub). We have run it on a video of a scene that contains a message that appears a few times. Your goal is to crack the code and find the message! This repo serves as both the location of the raw data and a public place to share your findings and collaborate with others (see Discusssions).
 
 Our privacy-preserved data is in the `hashed_data.mat` file.
 
