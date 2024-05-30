@@ -18,9 +18,9 @@ Available priors:
     - is in view for multiple frames at a time
  - The video is taken at 30 fps, walking speed, chest height
 
-Additional information:
+Additional information (using this corresponds to solving an easier version of the challenge):
 
- - The video is processed using the file "m_generate_hash.m" and associated functions
+ - The video was processed using the file "m_generate_hash.m" and associated functions (in the `matlab` directory). For python, the `python` directory contains a Python script with a function that mimics the hashing process using exported circle parameters.
  - The scene is a classroom in the same building as the ABS datasets
  - The random number seed and code used to generate the hashes can be used to recreate the feature circles that were used, giving known positions of samples (you can do this in matlab by runing `m_generate_hash.m`)
  - The first image of the video (`00001.png`)
@@ -32,6 +32,18 @@ Keep us posted on your progress using the discussion forum, or by emailing us at
 ## Discussion Boards
 
 To allow for a sharing of ideas and progress we have set up a discussion board with this repo. By posting, you agree to our code of conduct. 
+
+## Quickstart: Matlab
+
+If you wish to solve the full challenge, you should only rely on the hashed data (i.e. only open `hashed_data.mat`).
+
+The `matlab` directory contains a script `m_generate_hash.m` which was run to generated the hashed data. Included functions explain how the circles were drawn and the image sampled, and the rng seed can be used to recreate the feature circles if you wish tosolve an easier version of the challenge. 
+
+## Quickstart: Python
+
+If you wish to solve the full challenge, you should only rely on the hashed data (i.e. only open `hashed_data.mat`). For easier versions of the challenge, such as the case where you know the feature circles, you can use the additional information provided.
+
+The `python` directory contains a Python script with a function that shows the way in which an image is hashed. For consistency with the original matlab implementation, it uses the exported circle information `circle_info_all_imgs.mat` to generate the hashed data. 
 
 ## FAQ
 
